@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新式左侧导航栏</title>
+    <!--百度在线压缩地址-->
+    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        /*顶部开始*/
+
+        .top_img{
+            width:100%;
+            text-align: center;
+            overflow: hidden;       /*裁剪父元素,使其不会出现下方滚动框*/
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
+        .top_img-inner{
+            background: yellow;
+            /* 原始写法
+            position:absolute;
+            left:50%;
+            margin-left:-960px;
+            */
+            /*
+                margin: 0 -100%
+            */
+            margin: 0 -100%
+        }
+
+        .warp{
+            height: 34px;
+            background: #980001;
+        }
+        .warp .warp_in{
+            height: 500px;
+            width: 1200px;
+            margin:0 auto;
+            /*background: blue;*/
+            position: relative;
+        }
+        .warp .warp_in .nav{
+            width: 100%;
+            height: 34px;
+            list-style: none;
+            line-height: 34px;
+        }
+        .nav_li li{
+            float: left;
+            /*background:purple;*/
+            list-style: none;
+            margin-left: 30px;
+            color:#fff;
+            text-align:center;
+            cursor: pointer;
+        }
+        .warp .nav li:first-child{
+            background: #cd171f;
+            width: 150px;
+            margin:0;
+        }
+
+        /*横幅*/
+        .banner{
+            height: 470px;
+            background: url("banner1.jpg");
+            margin-left: -220px;
+        }
+        /*开始左侧导航栏*/
+
+        .warp .menu{
+            width: 1200px;
+            height: 300px;
+            /*background:yellow;*/
+            position: relative;
+        }
+        .warp .menu ul{
+            width: 150px;
+            height: 470px;
+            background: #fff;
+        }
+        .warp .menu ul li{
+            height: 30px;
+            line-height: 30px;
+            list-style: none;
+            cursor: pointer;
+        }
+        .warp .menu ul li:hover{
+            background: red;
+        }
+        .warp .menu ul li span{
+            margin-left: 40px;
+        }
+        .warp .menu .right{
+            width:1050px;
+            height: 470px;
+            position: absolute;
+            top:0;
+            left:150px;
+            background: #fdb823;
+            display: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<!--顶部图片栏-->
+<div class="top_img">
+    <!--顶部图片-->
+    <img src="top.jpg" class="top_img-inner">
+    </img>
+</div>
+<!--横向导航栏-->
+<div class="warp">
+    <div class="warp_in">
+        <div class="nav">
+            <ul class="nav_li">
+                <li>全部商品分类</li>
+                <li>首页</li>
+                <li>领券中心</li>
+                <li>值得买</li>
+                <li>葡萄酒馆</li>
+                <li>洋酒馆</li>
+                <li>酒仙甄选</li>
+                <li>清仓</li>
+                <li>新品</li>
+                <li>CLUB会员</li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <span>白酒</span>
+                    <div class="right">
+                        我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,
+                        
+                        , 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,我是白酒, 我是白酒,我是白酒,
+                    </div>
+                </li>
+                <li>
+                    <span>葡萄酒</span>
+                    <div class="right">
+                        我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,我是葡萄酒, 我是葡萄酒,我是葡萄酒,
+                    </div>
+
+                </li>
+                <li>
+                    <span>洋酒</span>
+                    <div class="right">
+                        我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,我是洋酒, 我是洋酒,我是洋酒,
+                    </div>
+
+                </li>
+                <li>
+                    <span>啤酒</span>
+                    <div class="right">
+                        我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,我是啤酒, 我是啤酒,我是啤酒,
+                    </div>
+
+                </li>
+                <li>
+                    <span>食尚</span>
+                    <div class="right">
+                        我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,我是食尚, 我是食尚,我是食尚,
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--banner图片和左侧菜单栏-->
+<div class="banner">
+
+</div>
+<!--占位符-->
+<div>
+    <ul>
+        <li>
+            <h1>00000000001</h1>
+        </li>
+        <li>
+            <h1>00000000002</h1>
+        </li>
+        <li>
+            <h1>00000000003</h1>
+        </li>
+        <li>
+            <h1>00000000004</h1>
+        </li>
+        <li>
+            <h1>00000000005</h1>
+        </li>
+        <li>
+            <h1>00000000006</h1>
+        </li>
+        <li>
+            <h1>00000000007</h1>
+        </li>
+        <li>
+            <h1>00000000008</h1>
+        </li>
+        <li>
+            <h1>00000000009</h1>
+        </li>
+        <li>
+            <h1>00000000010</h1>
+        </li>
+        <li>
+            <h1>00000000011</h1>
+        </li>
+        <li>
+            <h1>00000000012</h1>
+        </li>
+        <li>
+            <h1>00000000013</h1>
+        </li>
+        <li>
+            <h1>00000000014</h1>
+        </li>
+        <li>
+            <h1>00000000015</h1>
+        </li>
+        <li>
+            <h1>00000000016</h1>
+        </li>
+        <li>
+            <h1>00000000017</h1>
+        </li>
+        <li>
+            <h1>00000000018</h1>
+        </li>
+        <li>
+            <h1>00000000019</h1>
+        </li>
+        <li>
+            <h1>00000000020</h1>
+        </li>
+        <li>
+            <h1>00000000021</h1>
+        </li>
+        <li>
+            <h1>00000000022</h1>
+        </li>
+        <li>
+            <h1>00000000023</h1>
+        </li>
+        <li>
+            <h1>00000000024</h1>
+        </li>
+        <li>
+            <h1>00000000025</h1>
+        </li>
+        <li>
+            <h1>00000000026</h1>
+        </li>
+        <li>
+            <h1>00000000027</h1>
+        </li>
+        <li>
+            <h1>00000000028</h1>
+        </li>
+        <li>
+            <h1>00000000029</h1>
+        </li>
+        <li>
+            <h1>00000000030</h1>
+        </li>
+    </ul>
+</div>
+<script>
+    /**
+     * 思路 :
+     *  鼠标一移动到 li元素上边 (1):改变其背景色
+     *                          (2):改变其li元素下方的div元素显示为block
+     *  鼠标一移开 li元素      (1):背景色改变为原来的颜色
+     *                          (2):下方的div元素显示设置为none
+     */
+
+     $(".menu li").hover(
+     function(){
+                $(this).css({"background":"red"});
+                $(this).find(".right").css({"display":"block"});
+            },
+     function(){
+                $(this).css({"background":"#fff"});
+                $(this).find(".right").css({"display":"none"});
+            }
+     );
+
+</script>
+</body>
+</html>
