@@ -1,0 +1,7 @@
+前段时间发现了一个让图片居中的写法，父标签{text-algin:center}    img {margin:0 -100%};        不过好像对一张图片管用,多张的话就容易出现问题了,单张居中的话感觉很是好用.
+
+另外一种原始写法       position:absolute; 
+
+                                    left:50%; 
+
+                                    margin-left:-960px;
