@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <style>
+        body{
+            background: #e7e7e7;
+        }
+        .container{
+            padding:10px;
+        }
+        .row {
+            margin:0;
+            margin-top:20px;
+        }
+        .col-md-9{
+            padding:0;
+        }
+        .col-sm-4{
+            padding: 0 12px 15px 12px;
+        }
+        .course-item{
+            position: relative;
+            top:0;
+            transition:box-shadow,top  0.5s;
+        }
+        .course-item:hover{
+            box-shadow:0 2px 15px -2px #8b8b8b;
+            top: -5px;
+        }
+        .course-info{
+            background: #fff;
+            padding:16px;
+        }
+ 
+ 
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3  visible-lg visible-md">
+            <img class="img-responsive"
+                 src="http://www.itlike.com/files/system/block_picture_1539651730.png?version=8.3.5" alt="">
+        </div>
+        <div class="col-md-9">
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+ 
+        <div class="col-md-3  visible-lg visible-md">
+            <img class="img-responsive"
+                 src="http://www.itlike.com/files/system/block_picture_1539651730.png?version=8.3.5" alt="">
+        </div>
+        <div class="col-md-9">
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-item">
+                    <span class="tags"><span class="tag-serialing"></span></span>
+                    <a href="">
+                        <img src="http://www.itlike.com/files/course/2018/10-14/11390594215b545619.png" alt="撩课大前端—Vue项目实战—撩多多商城"
+                             class="img-responsive">
+                    </a>
+                    <div class="course-info">
+                        <div class="course-title">
+                            <a title="撩课大前端—Vue项目实战—撩多多商城" class="text-overflow"
+                                                     href="">撩课大前端—Vue项目实战—撩</a>
+                        </div>
+                        <div class="course-number clearfix">
+                            <span class="course-price-widget">
+                                    <span class="price">168元</span>
+                            </span>
+                            <span class="course-student pull-right">已有82人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yuan">
+    </div>
+</div>
+</body>
+</html>
